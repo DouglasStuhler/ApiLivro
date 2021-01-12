@@ -1,0 +1,63 @@
+body, html{
+    background-color: #ddd;
+    font-family: sans-serif;
+}
+
+.tudo{
+    width: 60vw;
+    margin: 4vh auto;
+    padding: 1vh 2vw;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+h2{
+    text-align: center;
+}
+
+.input{
+    display: block;
+    width: 30vw;
+    margin: .6vh auto;
+    box-sizing: border-box;
+    padding: .8vh 1vw;
+    font-size: 1em;
+    color: black;
+    border: 1.5px solid #888;
+    background-color: white;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin: 0 auto;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    padding: 1vh 0;
+    margin-top: .8vh;
+    border: none;
+    border-radius: .5vw;
+    font-weight: bold;
+    font-size: .8em;
+}
+
+.enviar{
+    color: white;
+    background-color: #32cd32;
+}
+
+.apagar{
+    color: black;
+    background-color: #ffc222;
+}
+
+.voltar{
+    color: white;
+    background-color: #e52828;
+}

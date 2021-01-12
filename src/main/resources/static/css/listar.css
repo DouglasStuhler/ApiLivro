@@ -1,0 +1,82 @@
+body, html{
+    background-color: #ddd;
+    font-family: sans-serif;
+}
+
+.tudo{
+    min-width: 90vw;
+    margin: 0 5vw;
+    background-color: #fff;
+}
+
+.titulo{
+    width: 90vw;
+    margin: 0 5vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.btn{
+    display: inline-block;
+    height: 1.6em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 1vw;
+    padding: .6em 1.5vw .2em 1.5vw;
+    background-color: #4169e1;
+    border-radius: .5vw;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.title{
+    justify-content: baseline;
+}
+
+.codigo{
+    padding: 0;
+    width: 5vw;
+    text-align: center;
+}
+
+.nome{
+    padding: 0;
+    width: 30vw;
+    text-align: center;
+}
+
+.ano{
+    padding: 0;
+    width: 10vw;
+    text-align: center;
+}
+
+.autor{
+    padding: 0;
+    width: 25vw;
+    text-align: center;
+}
+
+.form{
+    box-sizing: border-box;
+    width: 10vw;
+    text-align: center;
+}
+
+.botao{
+    padding: 1vh 1.5vw;
+    border: none;
+    border-radius: .4vw;
+    background-color: #e52828;
+    text-align: center;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+}

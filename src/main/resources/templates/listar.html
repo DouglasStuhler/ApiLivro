@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>Livraria - Livros</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/listar.css"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+    <div class="titulo">
+        <div><h2>Lista de Livros:</h2></div>
+        <a href="/cadastrarLivro" class="btn">Cadastrar Novo Livro</a>
+    </div>
+    <div class="tudo">
+        <div class="row">
+            <p class="codigo title"><b>Código</b></p>
+            <p class="nome title"><b>Nome do Livro</b></p>
+            <p class="ano title"><b>Ano de Lançamento</b></p>
+            <p class="autor title"><b>Autor</b></p>
+            <p class="ano title"><b>Opções</b></p>
+        </div>
+    </div>
+    <div th:each="livro: ${livro}" class="tudo">
+        <div class="row">
+            <p class="codigo"><span th:text="${livro.codigo}"></span></p>
+            <p class="nome"><span th:text="${livro.nome}"></span></p>
+            <p class="ano"><span th:text="${livro.ano}"></span></p>
+            <p class="autor"><span th:text="${livro.autor}"></span></p>
+            <form class="form" action="/listar" method="POST">
+                <input type="number" name="codigo" th:value="${livro.codigo}" style="display: none;">
+                <button type="submit" class="botao"><span>Excluir</span></button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
